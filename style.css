@@ -1,0 +1,191 @@
+*{box-sizing:border-box}
+
+body{
+margin:0;
+background:#050607;
+color:#d7d7d7;
+font-family:Consolas,monospace
+}
+
+header{
+border-bottom:1px solid #252a2d;
+padding:18px 22px;
+background:#090b0c;
+display:flex;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap
+}
+
+.brand{
+font-size:26px;
+letter-spacing:5px;
+color:#eee
+}
+
+.status{
+font-size:12px;
+color:#777
+}
+
+.status b{
+color:#a64b4b
+}
+
+main{
+display:flex;
+min-height:calc(100vh - 72px)
+}
+
+aside{
+width:210px;
+border-right:1px solid #252a2d;
+padding:14px;
+background:#080909
+}
+
+aside button{
+display:block;
+width:100%;
+margin:5px 0;
+padding:12px;
+text-align:left;
+background:#0c0e0f;
+color:#999;
+border:1px solid #202426;
+cursor:pointer;
+font:inherit
+}
+
+aside button:hover{
+color:#fff;
+border-color:#555
+}
+
+#screen{
+padding:28px;
+max-width:1000px;
+width:100%
+}
+
+.panel{
+border:1px solid #292e31;
+background:#0a0c0d;
+padding:20px;
+margin-bottom:16px
+}
+
+.title{
+font-size:22px;
+color:#fff;
+margin:0 0 15px
+}
+
+.muted{
+color:#666
+}
+
+.file{
+border:1px solid #24292b;
+padding:14px;
+margin:9px 0;
+cursor:pointer
+}
+
+.file:hover{
+border-color:#777;
+background:#0d1011
+}
+
+.locked{
+color:#6b3f3f
+}
+
+.tag{
+display:inline-block;
+border:1px solid #444;
+padding:3px 7px;
+margin:3px;
+font-size:11px;
+color:#aaa
+}
+
+.danger{
+color:#b95b5b
+}
+
+.ok{
+color:#75a879
+}
+
+pre{
+white-space:pre-wrap;
+line-height:1.6;
+color:#bfc3c5
+}
+
+input,textarea{
+background:#050607;
+color:#ddd;
+border:1px solid #444;
+padding:10px;
+font:inherit;
+width:100%;
+margin:5px 0
+}
+
+button.action{
+background:#15191b;
+color:#ddd;
+border:1px solid #555;
+padding:10px 14px;
+font:inherit;
+cursor:pointer
+}
+
+.action:hover{
+background:#222
+}
+
+.clue{
+display:none;
+border-left:2px solid #777;
+padding:12px;
+margin-top:8px;
+color:#aaa
+}
+
+.found{
+border-color:#536c55
+}
+
+.small{
+font-size:12px;
+color:#777
+}
+
+@media(max-width:700px){
+main{
+display:block
+}
+
+aside{
+width:100%;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:4px
+}
+
+aside button{
+margin:0;
+font-size:11px
+}
+
+.brand{
+font-size:20px
+}
+
+#screen{
+padding:15px
+}
+}
